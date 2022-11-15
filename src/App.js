@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import MembersList from './components/MembersList';
 import MemberPage from './components/memberPage/MemberPage';

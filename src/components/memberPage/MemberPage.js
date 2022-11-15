@@ -48,8 +48,8 @@ function MemberPage(props) {
         return (
             <div class='member-page-wrap'>
                 <Link to="/">Return to Members List</Link>
-                <h1>Member Page</h1>
-                <img src={selectedMember.picture.large} />
+                <h1>Member Profile Page</h1>
+                <img alt={`Image of Member ${selectedMember.name.first} ${selectedMember.name.last}`} src={selectedMember.picture.large} />
                 <p>First Name: {selectedMember.name.first}</p>
                 <p>Last Name: {selectedMember.name.last}</p>
                 <p>Street: {selectedMember.location.street.number} {selectedMember.location.street.name}</p>

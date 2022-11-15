@@ -49,7 +49,7 @@ function MembersList() {
               state={{ selectedMember: member }}
             >
               <div className="member-listing">
-                <img src={member.picture.thumbnail} />
+                <img alt={`Image of Member ${member.name.first} ${member.name.last}`} src={member.picture.thumbnail} />
                 <p>{member.name.first}  {member.name.last}</p>
                 <p>Age: {member.dob.age}</p>
               </div>
