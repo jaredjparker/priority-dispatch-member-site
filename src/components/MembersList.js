@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import './MembersList.css';
 
 function MembersList() {
@@ -42,11 +43,17 @@ function MembersList() {
         <input type="text" placeholder="Search Names" value={searchText} onChange={handleChange} />
         <div className="member-listing-wrap">
           {filteredMembers.map((member, index) => (
-            <div className="member-listing" key={`${member.id.value}${index}`}>
-              <img src={member.picture.thumbnail} />
-              <p>{member.name.first}  {member.name.last}</p>
-              <p>Age: {member.dob.age}</p>
-            </div>
+            <Link
+              key={`${member.id.value}-${index}`}
+              to="/profile"
+              state={{ selectedMember: member }}
+            >
+              <div className="member-listing">
+                <img src={member.picture.thumbnail} />
+                <p>{member.name.first}  {member.name.last}</p>
+                <p>Age: {member.dob.age}</p>
+              </div>
+            </Link>
           ))}
         </div>
       </div>
