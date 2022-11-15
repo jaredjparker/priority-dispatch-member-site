@@ -1,0 +1,44 @@
+.member {
+    padding: 3rem;
+}
+
+.member h1 {
+    text-align: center;
+}
+
+.member input {
+    padding: .5rem;
+    border-radius: .25rem;
+    width: 98%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.member-listing-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.member-listing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid gray;
+    border-radius: .25rem;
+    padding: 1rem;
+    margin: 1rem .25rem;
+    width: 150px;
+}
+
+.member-listing p {
+    font-size: .75rem;
+    margin: .2rem 0;
+
+}
+
+.member-listing img {
+    border-radius: .25rem;
+}
